@@ -4,7 +4,7 @@ on:
   schedule:
     # - cron: "*/180 * * * *"  # Every 180 minutes
     - cron: "0 8 * * *"  # Runs every day at 8 AM UTC
-  # workflow_dispatch:     # Allow manual trigger
+  workflow_dispatch:     # Allow manual trigger
 
 jobs:
   scrape:
