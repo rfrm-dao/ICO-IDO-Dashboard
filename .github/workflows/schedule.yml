@@ -38,7 +38,7 @@ jobs:
 
       - name: Push Changes
         env:
-          GH_PAT: ${{ secrets.MDS_PAT }}
+          GH_PAT: ${{ secrets.GH_TOKEN }}
         run: |
           git add .
           git commit -m "Automated update - $(date)" || echo "No changes to commit"
